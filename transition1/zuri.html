@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transit.css"/>
+    <link rel="stylesheet" href="transition.css"/>
+    <title>Home</title>
+
+    <style>
+      #preloader{
+          background: rgb(119, 187, 122) url(./images/preloader.gif);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          z-index: 100;
+
+      }
+  </style>
+</head>
+<body>
+
+  <div id="preloader">
+    
+  </div>
+    
+<!-- Adding something to use to create the transition such as the block element to vover the screen and uncover the screen -->
+<!-- Each transition we create will have a transition ID e.g Transition 1 etc  -->
+
+
+<!-- <div class="transition transition-2 is-active"></div> -->
+
+
+<header>
+    <!-- this is the navigation bar -->
+    <nav class="navbar">
+
+        <ul>
+            <li class="spot"><a href="zuri.html" ><img src="./imgforhome/trendsfavicon.svg"  alt=""><span>Home</span></a></li>
+            <li class="spot"><a href="contact-us.html"><img src="./imgforhome/featuredfavicon.svg" alt=""> </i><span>Contact us</span></a></li>
+            <li class="spot"><a href="reset-password.html"> <img src="./imgforhome/latestfavicon.svg" alt=""></i><span>Password</span></a></li>
+            <li class="login"><a href="sign-in.html"><img src="./imgforhome/loginfavicon.svg"  alt=""></i><span class="pots">Login</span></a></li>
+          
+        </ul>
+    </nav>
+</header>
+
+
+<section class="upper-container">
+    <div class="zuri-up">
+      <img src="./images/zuri-logo-full.svg" alt="" class="img-logo" />
+    </div>
+    <div class="upper">
+      <h2>Learn, Build, Grow.</h2>
+      <p>
+        Unlock you Brilliance with our hands-on
+        <a href="training.html">beginner</a>
+        and
+        <a href="#">expert training.</a>
+        Zuri Team has been immensely successful in creating a global network
+        of a highly adept intelligent workforce that can help your company
+        achieve their mission-critical
+        <a href="talent.html">projects and goals</a>
+      </p>
+      <div class="upper-btn">
+        <a href="training.html">
+          <button class="red-btn">I'm new to the Industry</button>
+        </a>
+        <br>
+        <a href="talent.html">
+          <button class="redline-btn">I need industry experience</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="tran.js"></script>
+
+  <script>
+    var loader = document.getElementById('preloader');
+   window.addEventListener("load", function(){
+       loader.style.display = "none";
+   });
+   
+</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="contact-us.css" />
+        <link rel="stylesheet" href="transit.css">
+        <link rel="stylesheet" href="transition.css">
+        <title>Contact Us</title>
+
+        <style>
+            #preloader{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10000;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-color: yellow;
+            }
+            .preloader-logo{
+                position: absolute;
+                display: flex;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .preloader-logo p{
+                font-size: 6rem;
+                /* color: red; */
+            }
+            #glam{
+                animation: animateOne -0.5s linear 0.8s infinite alternate;
+            }
+            #us{
+                animation: animateTwo 0.8s linear 0.8s infinite alternate;
+            }
+            @keyframes animateOne {
+                0%{
+                    opacity: 0;
+                    fill: #ffffff;
+                }
+                100%{
+                    opacity: 1;
+                    fill: #5c5552;
+                }
+            }
+            @keyframes animateTwo {
+                0%{
+                    opacity: 0;
+                    fill: #ffffff;
+                }
+                100%{
+                    opacity: 1;
+                    fill: #ed3d01;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="preloader">
+            <div class="preloader-logo">
+                <p id="glam">Glam</p>
+                <p id="us">Us</p>
+            </div>
+        </div>
+
+        <div class="transition transition-3 is-active"></div>
+
+        <header>
+            <!-- this is the navigation bar -->
+            <nav class="navbar">
+                <ul>
+                    <li class="spot"><a href="zuri.html" ><img src="./imgforhome/trendsfavicon.svg"  alt=""><span>Home</span></a></li>
+                    <li class="spot"><a href="contact-us.html"><img src="./imgforhome/featuredfavicon.svg" alt=""> </i><span>Contact us</span></a></li>
+                    <li class="spot"><a href="reset-password.html"> <img src="./imgforhome/latestfavicon.svg" alt=""></i><span>Password</span></a></li>
+                    <li class="login"><a href="sign-in.html"><img src="./imgforhome/loginfavicon.svg"  alt=""></i><span class="pots">Login</span></a></li>
+                  
+                </ul>
+            </nav>
+        </header>
+        
+
+
+
+        <main>
+            <div class="container">
+                <div class="col-1">
+                    <img
+                        src="../images/keyboard-contact-us.png"
+                        alt=""
+                        width="649px"
+                    />
+                </div>
+                <div class="col-2">
+                    <!-- <h2 class="contact-us">Contact Us</h2>
+                    <h3 class="we-would">We would love to hear from you!</h3> -->
+                    <h2 class="tittle">Contact Us</h2>
+                    <h3 class="sub-title">
+                        We would love to hear from you!
+                    </h3>
+                    <form id="form" novalidate>
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                required
+                                class="field"
+                                id="name"
+                            />
+                            <span id="name-error" class="error"
+                                >Minimum 2 characters(letters only)</span
+                            >
+                        </div>
+
+                        <div class="input-field">
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                required
+                                class="field"
+                                id="email"
+                            />
+                            <span id="email-error" class="error"
+                                >Please enter a valid email address</span
+                            >
+                        </div>
+
+                        <div class="input-field">
+                            <input
+                                type="tel"
+                                name="Phone"
+                                placeholder="Phone Number (+234)"
+                                required
+                                class="field"
+                                id="phone"
+                            />
+                            <span id="phone-error" class="error">
+                                Please enter a valid phone number</span
+                            >
+                        </div>
+
+                        <div class="input-field textarea">
+                            <textarea
+                                name="message"
+                                id="message"
+                                class="field"
+                                placeholder="Enter Your Text"
+                                required
+                            ></textarea>
+                            <span id="message-error" class="error"
+                                >Please enter your message</span
+                            >
+                        </div>
+                        <div class="submit">
+                            <input
+                                type="submit"
+                                value="Send Message"
+                                class="send-message"
+                            />
+                            <span id="submit-error"></span>
+                        </div>
+                    </form>
+                    <div class="down">
+                        <div class="privacy">
+                            <a href="#" class="privacy">
+                                <p>Privacy Policy</p>
+                            </a>
+                        </div>
+                        <div class="stroke">
+                            <p> &#124; </p>
+                        </div>
+                        <div class="terms">
+                            <a href="#">
+                                <p>Terms and Conditions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            // function sendEmail() {
+            //     Email.send({
+            //         Host: "smtp.gmail.com",
+            //         Username: "glamus001@gmail.com",
+            //         Password: "ProjectTeam5",
+            //         To: "adebayoadeniyi1121@gmail.com",
+            //         From: document.getElementById("email").value,
+            //         Subject: "Contact Us Enquiry",
+            //         Body: "And this is the body",
+            //     }).then((message) => alert(message));
+            // }
+
+            // onsubmit="sendEmail(); reset(); return false;"
+        </script>
+        <script src="./js/contact-us.js"></script>
+
+        <script src="tran.js"></script>
+
+
+        <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            setTimeout(function(){
+                $('.loader_bg').fadeToggle();
+            }, 1500);
+        </script>
+
+    </body>
+</html>
